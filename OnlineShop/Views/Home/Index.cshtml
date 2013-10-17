@@ -2,8 +2,11 @@
     ViewBag.Title = "Магазин мебели";
 }
 <body @*style="background-image:url('Images/BackgroundSite.jpg')"*@>
+<table align="center" width = 75% name = "Разметка" border="0"> 
 
-<table border="1" align="center" width=75% background="Images/BackgroundSite.jpg">
+<tr>
+<td>
+<table name="Заголовок" align="center" width = 100% background="Images/BackgroundSite.jpg">
 <tr>
 <td>
 @Html.ActionLink("Главная", "Index")
@@ -26,17 +29,34 @@ zorrendor@gmail.com
 </table>
 
 <br />
-
-<table border="1" align="center" width=75%>
-<tr>
-<td width=25%>
-<input type=text />
-Поиск
-</td>
-<td>
-
 </td>
 </tr>
-</table>
 
+<tr> 
+
+<td width=25%>
+<table name="Поиск">
+<tr>
+<td>
+<input type=text />
+<input type=button name="Поиск" value="Поиск"/>
+</td>
+</td>
+
+<td width = 75%>
+<table name = "furnitures" cellspacing="12">
+@for (int i = 0; i < 3; i++)
+{
+    <tr>
+    @for (int j = 0; j < 3; j++)
+    {
+        <td> Privetttttttttttttt</td>
+    }
+    </tr>
+}
+</table>
+</td>
+
+</tr>
+</table>
 </body>
